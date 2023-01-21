@@ -2,8 +2,6 @@ import 'package:airplane/ui/widgets/custom_bottom.dart';
 import 'package:flutter/material.dart';
 import 'package:airplane/shared/theme.dart';
 
-void main() => runApp(const BonusPage());
-
 class BonusPage extends StatelessWidget {
   const BonusPage({super.key});
 

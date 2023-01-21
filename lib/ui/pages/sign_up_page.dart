@@ -3,8 +3,6 @@ import 'package:airplane/ui/widgets/custom_text_fom_field.dart';
 import 'package:flutter/material.dart';
 import 'package:airplane/shared/theme.dart';
 
-void main() => runApp(const SignUpPage());
-
 class SignUpPage extends StatelessWidget {
   const SignUpPage({super.key});
 
