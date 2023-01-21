@@ -1,8 +1,6 @@
 import 'dart:async';
-
-import 'package:airplane/ui/pages/get_started_page.dart';
 import 'package:flutter/material.dart';
-import '../../shared/theme.dart';
+import 'package:airplane/shared/theme.dart';
 
 class SplashPage extends StatefulWidget {
   const SplashPage({super.key});
@@ -14,9 +12,8 @@ class SplashPage extends StatefulWidget {
 class _SplashPageState extends State<SplashPage> {
   @override
   void initState() {
-    // TODO: implement initState
     Timer(
-      Duration(seconds: 3),
+      const Duration(seconds: 3),
       (() {
         Navigator.pushNamed(context, '/get-started');
       }),
@@ -35,8 +32,8 @@ class _SplashPageState extends State<SplashPage> {
             Container(
               width: 100,
               height: 100,
-              margin: EdgeInsets.only(bottom: 50),
-              decoration: BoxDecoration(
+              margin: const EdgeInsets.only(bottom: 50),
+              decoration: const BoxDecoration(
                 image: DecorationImage(
                   image: AssetImage(
                     'assets/icon_plate.png',

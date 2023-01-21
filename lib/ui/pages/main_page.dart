@@ -2,7 +2,7 @@ import 'package:airplane/ui/widgets/custom_bottom_navigation.dart';
 import 'package:flutter/material.dart';
 import 'package:airplane/shared/theme.dart';
 
-void main() => runApp(MainPage());
+void main() => runApp(const MainPage());
 
 class MainPage extends StatelessWidget {
   const MainPage({super.key});
@@ -28,7 +28,7 @@ class MainPage extends StatelessWidget {
           ),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: [
+            children: const [
               CustomBottomNavigation(
                 imageUrl: 'assets/icon_home.png',
                 isSelected: true,
@@ -51,7 +51,7 @@ class MainPage extends StatelessWidget {
     return Scaffold(
       backgroundColor: kBackgroundColor,
       body: Stack(
-        children: [Text('Main Page'), customBottomNavigation()],
+        children: [const Text('Main Page'), customBottomNavigation()],
       ),
     );
   }
