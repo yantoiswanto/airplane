@@ -1,3 +1,4 @@
+import 'package:airplane/ui/pages/checkout_page.dart';
 import 'package:airplane/ui/widgets/custom_bottom.dart';
 import 'package:airplane/ui/widgets/seat_item.dart';
 import 'package:flutter/material.dart';
@@ -349,7 +350,14 @@ class ChooseSeatPage extends StatelessWidget {
     Widget checkOutButton() {
       return CustomBottom(
         title: 'Continue to Checkout',
-        onPressed: (() {}),
+        onPressed: (() {
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: ((context) => const CheckoutPage()),
+            ),
+          );
+        }),
         margin: const EdgeInsets.only(
           top: 30,
           bottom: 46,
