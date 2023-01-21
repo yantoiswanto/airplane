@@ -50,7 +50,7 @@ class GetStartedPage extends StatelessWidget {
                 margin: EdgeInsets.only(top: 50, bottom: 80),
                 child: TextButton(
                   onPressed: (() {
-                    Navigator.pushNamed(context, 'sign-up');
+                    Navigator.pushNamed(context, '/sign-up');
                   }),
                   style: TextButton.styleFrom(
                     backgroundColor: kPrimaryColor,
